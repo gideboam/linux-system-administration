@@ -1,0 +1,163 @@
+===== OS VERSION =====
+NAME="Rocky Linux"
+VERSION="9.7 (Blue Onyx)"
+ID="rocky"
+ID_LIKE="rhel centos fedora"
+VERSION_ID="9.7"
+PLATFORM_ID="platform:el9"
+PRETTY_NAME="Rocky Linux 9.7 (Blue Onyx)"
+ANSI_COLOR="0;32"
+LOGO="fedora-logo-icon"
+CPE_NAME="cpe:/o:rocky:rocky:9::baseos"
+HOME_URL="https://rockylinux.org/"
+VENDOR_NAME="RESF"
+VENDOR_URL="https://resf.org/"
+BUG_REPORT_URL="https://bugs.rockylinux.org/"
+SUPPORT_END="2032-05-31"
+ROCKY_SUPPORT_PRODUCT="Rocky-Linux-9"
+ROCKY_SUPPORT_PRODUCT_VERSION="9.7"
+REDHAT_SUPPORT_PRODUCT="Rocky Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="9.7"
+
+===== KERNEL =====
+5.14.0-611.5.1.el9_7.x86_64
+
+===== CPU =====
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           48 bits physical, 48 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  6
+On-line CPU(s) list:                     0-5
+Vendor ID:                               AuthenticAMD
+Model name:                              AMD EPYC Processor (with IBPB)
+CPU family:                              23
+Model:                                   1
+Thread(s) per core:                      1
+Core(s) per socket:                      6
+Socket(s):                               1
+Stepping:                                2
+BogoMIPS:                                5599.99
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl xtopology cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext ssbd ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 arat
+Hypervisor vendor:                       KVM
+Virtualization type:                     full
+L1d cache:                               192 KiB (6 instances)
+L1i cache:                               384 KiB (6 instances)
+L2 cache:                                3 MiB (6 instances)
+L3 cache:                                8 MiB (1 instance)
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-5
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Mitigation; untrained return thunk; SMT disabled
+Vulnerability Spec rstack overflow:      Vulnerable: Safe RET, no microcode
+Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Not affected
+Vulnerability Tsx async abort:           Not affected
+
+===== MEMORY =====
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi       3.5Gi       7.3Gi        61Mi       985Mi       7.9Gi
+Swap:             0B          0B          0B
+
+===== DISK =====
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        4.0M     0  4.0M   0% /dev
+tmpfs           5.8G   16K  5.8G   1% /dev/shm
+tmpfs           2.3G  1.4M  2.3G   1% /run
+/dev/sda4       199G   15G  185G   8% /
+/dev/sda3       936M  468M  469M  50% /boot
+/dev/sda2       100M   11M   90M  11% /boot/efi
+tmpfs           1.2G     0  1.2G   0% /run/user/1002
+
+===== UPTIME =====
+ 13:24:34 up 44 days, 22:28,  1 user,  load average: 3.85, 3.93, 4.00
+
+===== HOSTNAME =====
+vmi3318911.contaboserver.net
+
+===== USERS =====
+dataops1 pts/0        2026-07-06 12:54 (154.161.111.132)
+
+===== IP ADDRESSES =====
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 00:50:56:64:31:6d brd ff:ff:ff:ff:ff:ff
+    altname enp0s18
+    altname ens18
+    inet 194.163.190.21/18 brd 194.163.191.255 scope global noprefixroute eth0
+       valid_lft forever preferred_lft forever
+    inet6 2a02:c207:2331:8911::1/64 scope global noprefixroute 
+       valid_lft forever preferred_lft forever
+    inet6 fe80::250:56ff:fe64:316d/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+3: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 62:fa:aa:5d:36:dc brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::60fa:aaff:fe5d:36dc/64 scope link 
+       valid_lft forever preferred_lft forever
+7: vethc48ad95@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether be:29:24:ba:58:54 brd ff:ff:ff:ff:ff:ff link-netnsid 1
+    inet6 fe80::bc29:24ff:feba:5854/64 scope link 
+       valid_lft forever preferred_lft forever
+8: veth29231ec@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 76:25:7d:a2:79:cc brd ff:ff:ff:ff:ff:ff link-netnsid 2
+    inet6 fe80::7425:7dff:fea2:79cc/64 scope link 
+       valid_lft forever preferred_lft forever
+9: vethf46f2fb@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 02:4a:87:f4:07:8e brd ff:ff:ff:ff:ff:ff link-netnsid 3
+    inet6 fe80::4a:87ff:fef4:78e/64 scope link 
+       valid_lft forever preferred_lft forever
+10: veth73a0986@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 46:94:4d:6e:77:2f brd ff:ff:ff:ff:ff:ff link-netnsid 4
+    inet6 fe80::4494:4dff:fe6e:772f/64 scope link 
+       valid_lft forever preferred_lft forever
+11: veth7da74a7@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 02:49:10:0c:7f:07 brd ff:ff:ff:ff:ff:ff link-netnsid 5
+    inet6 fe80::49:10ff:fe0c:7f07/64 scope link 
+       valid_lft forever preferred_lft forever
+13: br-3d091e059010: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 86:00:01:92:67:57 brd ff:ff:ff:ff:ff:ff
+    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-3d091e059010
+       valid_lft forever preferred_lft forever
+    inet6 fe80::8400:1ff:fe92:6757/64 scope link 
+       valid_lft forever preferred_lft forever
+24893: veth05b4e48@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-3d091e059010 state UP group default 
+    link/ether e2:e4:41:70:95:e6 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet6 fe80::e0e4:41ff:fe70:95e6/64 scope link 
+       valid_lft forever preferred_lft forever
+39282: veth68e99d8@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether d6:53:53:6a:e1:42 brd ff:ff:ff:ff:ff:ff link-netnsid 6
+    inet6 fe80::d453:53ff:fe6a:e142/64 scope link 
+       valid_lft forever preferred_lft forever
+52555: br-2b4d1efbf423: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 26:26:58:35:28:f5 brd ff:ff:ff:ff:ff:ff
+    inet 172.20.0.1/16 brd 172.20.255.255 scope global br-2b4d1efbf423
+       valid_lft forever preferred_lft forever
+    inet6 fe80::2426:58ff:fe35:28f5/64 scope link 
+       valid_lft forever preferred_lft forever
+52633: br-bbce9b6f277c: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 66:e8:5e:3a:62:b4 brd ff:ff:ff:ff:ff:ff
+    inet 172.19.0.1/16 brd 172.19.255.255 scope global br-bbce9b6f277c
+       valid_lft forever preferred_lft forever
+    inet6 fe80::64e8:5eff:fe3a:62b4/64 scope link 
+       valid_lft forever preferred_lft forever
+52634: veth6908a06@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-bbce9b6f277c state UP group default 
+    link/ether 76:ac:af:89:a9:a6 brd ff:ff:ff:ff:ff:ff link-netnsid 7
+    inet6 fe80::74ac:afff:fe89:a9a6/64 scope link 
+       valid_lft forever preferred_lft forever
