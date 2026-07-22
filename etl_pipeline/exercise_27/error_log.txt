@@ -1,0 +1,3 @@
+Skipped record 4: Missing location
+Skipped record 5: could not convert string to float: 'invalid'
+Skipped record 7: Missing location
